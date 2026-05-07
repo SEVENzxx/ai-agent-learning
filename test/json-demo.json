@@ -1,504 +1,2452 @@
-{
-  "id_": "376db5a1-d8d4-4433-8466-656e46fcb4d6",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md"
+[
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "34ffb9c9-1988-4ccd-91f9-40fada8ab8d6",
-      "node_type": "3",
-      "metadata": {
-        "col_schema": "",
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "17a7215fc25f0dabf45a241a885e96579a703ba182d7d041f2ee140397a1953c",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Cultivates',
+  source_id=
+  '萧炎',
+  target_id=
+  'Dou qi',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a633410e-e177-4da3-bfea-cdcbe8c0bf0e'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "📚 RAG Document Assistant\n\n基于 LangChain + Streamlit 的智能文档检索助手，采用**父子文档索引**与**上下文压缩**技术，实现高精度、低幻觉的文档问答系统。\n\n---\n\n ✨ 核心特性",
-  "mimetype": "text/plain",
-  "start_char_idx": 1,
-  "end_char_idx": 118,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-{
-  "id_": "34ffb9c9-1988-4ccd-91f9-40fada8ab8d6",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md",
-    "col_schema": ""
+  name=
+  'Dou qi'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "376db5a1-d8d4-4433-8466-656e46fcb4d6",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "366aeda5f43f0edb5f1140533c4d1d3afa9a9dc4f7e38e2cd8cf8b53d21f70ee",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "e2a55fab-97d4-4c93-bba4-cd209dcb797d",
-      "node_type": "1",
-      "metadata": {
-        "table_df": "{' 特性 ': {0: ' 🔍 **父子文档检索** ', 1: ' 🗜️ **上下文压缩** ', 2: ' 📄 **多格式支持** ', 3: ' 💾 **双存储架构** ', 4: ' 💬 **多轮对话** ', 5: ' 🐳 **一键部署** ', 6: ' 🔒 **生产就绪** '}, ' 说明 ': {0: ' 子文档向量匹配 → 父文档完整召回，兼顾精度与上下文完整性 ', 1: ' LLM 自动提取关键片段，减少噪音，提升回答准确率 ', 2: ' PDF、DOCX、TXT、Markdown 等主流文档格式 ', 3: ' Chroma（向量检索）+ MySQL（元数据 & 聊天记录） ', 4: ' 自动关联历史消息，支持上下文连续问答 ', 5: ' Docker Compose 完整编排，开箱即用 ', 6: ' Nginx 反向代理、HTTPS、服务监控、日志轮转 '}}",
-        "table_summary": "父子文档检索、上下文压缩、多格式支持、双存储架构（Chroma + MySQL）、多轮对话、一键部署（Docker Compose）、生产就绪（Nginx、HTTPS、监控、日志轮转）。,\nwith the following columns:\n",
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "0cff7dd3a04b2ddb61bbfc79320358be3811c168ce5c8bcfcf452667bce8c58f",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Experiences',
+  source_id=
+  '萧炎',
+  target_id=
+  'Humiliation',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "父子文档检索、上下文压缩、多格式支持、双存储架构（Chroma + MySQL）、多轮对话、一键部署（Docker Compose）、生产就绪（Nginx、HTTPS、监控、日志轮转）。,\nwith the following columns:\n",
-  "mimetype": "text/plain",
-  "start_char_idx": 123,
-  "end_char_idx": 464,
-  "text_template": "{metadata_str}\n\n{content}",
-  "index_id": "e2a55fab-97d4-4c93-bba4-cd209dcb797d",
-  "obj": null,
-  "class_name": "IndexNode"
-}
-{
-  "id_": "e2a55fab-97d4-4c93-bba4-cd209dcb797d",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md",
-    "table_df": "{' 特性 ': {0: ' 🔍 **父子文档检索** ', 1: ' 🗜️ **上下文压缩** ', 2: ' 📄 **多格式支持** ', 3: ' 💾 **双存储架构** ', 4: ' 💬 **多轮对话** ', 5: ' 🐳 **一键部署** ', 6: ' 🔒 **生产就绪** '}, ' 说明 ': {0: ' 子文档向量匹配 → 父文档完整召回，兼顾精度与上下文完整性 ', 1: ' LLM 自动提取关键片段，减少噪音，提升回答准确率 ', 2: ' PDF、DOCX、TXT、Markdown 等主流文档格式 ', 3: ' Chroma（向量检索）+ MySQL（元数据 & 聊天记录） ', 4: ' 自动关联历史消息，支持上下文连续问答 ', 5: ' Docker Compose 完整编排，开箱即用 ', 6: ' Nginx 反向代理、HTTPS、服务监控、日志轮转 '}}",
-    "table_summary": "父子文档检索、上下文压缩、多格式支持、双存储架构（Chroma + MySQL）、多轮对话、一键部署（Docker Compose）、生产就绪（Nginx、HTTPS、监控、日志轮转）。,\nwith the following columns:\n"
+  name=
+  'Humiliation'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "34ffb9c9-1988-4ccd-91f9-40fada8ab8d6",
-      "node_type": "3",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md",
-        "col_schema": ""
-      },
-      "hash": "22a63eda8aaf423a3f3fe8f0317e05551463a3c5e2aaf9e2df560e5760df017a",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "4ddd0d41-8c33-4a0d-b30a-fb95ad377fa2",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "ea0d317a3a531659a5e5882de292b3737f7cea5baff474d3e65923e8df9468d0",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Was once',
+  source_id=
+  '萧炎',
+  target_id=
+  'Respected figure',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "父子文档检索、上下文压缩、多格式支持、双存储架构（Chroma + MySQL）、多轮对话、一键部署（Docker Compose）、生产就绪（Nginx、HTTPS、监控、日志轮转）。,\nwith the following columns:\n\n| 特性 | 说明 |\n|---|---|\n| 🔍 **父子文档检索** | 子文档向量匹配 → 父文档完整召回，兼顾精度与上下文完整性 |\n| 🗜️ **上下文压缩** | LLM 自动提取关键片段，减少噪音，提升回答准确率 |\n| 📄 **多格式支持** | PDF、DOCX、TXT、Markdown 等主流文档格式 |\n| 💾 **双存储架构** | Chroma（向量检索）+ MySQL（元数据 & 聊天记录） |\n| 💬 **多轮对话** | 自动关联历史消息，支持上下文连续问答 |\n| 🐳 **一键部署** | Docker Compose 完整编排，开箱即用 |\n| 🔒 **生产就绪** | Nginx 反向代理、HTTPS、服务监控、日志轮转 |\n",
-  "mimetype": "text/plain",
-  "start_char_idx": 123,
-  "end_char_idx": 464,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-{
-  "id_": "4ddd0d41-8c33-4a0d-b30a-fb95ad377fa2",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md"
+  name=
+  'Respected figure'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "569a3c33-1432-49ea-9832-6357f9fe2038",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "425de87595e4f6a57b82721ca2ac8c812e2c981ec3559c279f2045c40ba51c48",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "e2a55fab-97d4-4c93-bba4-cd209dcb797d",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md",
-        "table_df": "{' 特性 ': {0: ' 🔍 **父子文档检索** ', 1: ' 🗜️ **上下文压缩** ', 2: ' 📄 **多格式支持** ', 3: ' 💾 **双存储架构** ', 4: ' 💬 **多轮对话** ', 5: ' 🐳 **一键部署** ', 6: ' 🔒 **生产就绪** '}, ' 说明 ': {0: ' 子文档向量匹配 → 父文档完整召回，兼顾精度与上下文完整性 ', 1: ' LLM 自动提取关键片段，减少噪音，提升回答准确率 ', 2: ' PDF、DOCX、TXT、Markdown 等主流文档格式 ', 3: ' Chroma（向量检索）+ MySQL（元数据 & 聊天记录） ', 4: ' 自动关联历史消息，支持上下文连续问答 ', 5: ' Docker Compose 完整编排，开箱即用 ', 6: ' Nginx 反向代理、HTTPS、服务监控、日志轮转 '}}",
-        "table_summary": "父子文档检索、上下文压缩、多格式支持、双存储架构（Chroma + MySQL）、多轮对话、一键部署（Docker Compose）、生产就绪（Nginx、HTTPS、监控、日志轮转）。,\nwith the following columns:\n"
-      },
-      "hash": "8ae50dafc02c40a53117bc63b73a21f27e9c8a7841994f93bc36966cb0614c0b",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is',
+  source_id=
+  '萧炎',
+  target_id=
+  '萧家百年内第一斗者',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '74494ee0-297b-4ee8-b3f8-b322707f9fa7'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '74494ee0-297b-4ee8-b3f8-b322707f9fa7'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "---\n\n 🏗️ 系统架构\n\n\n┌─────────────────┐     ┌─────────────────────────────────────┐\n│   Streamlit     │────▶│         Document Processing           │\n│    (Frontend)   │     │  Loader → Parent/Child Chunker      │\n└─────────────────┘     │        → Chroma + MySQL Store       │\n         │              └─────────────────────────────────────┘\n         │                           │\n         ▼                           ▼\n┌─────────────────┐     ┌─────────────────────────────────────┐\n│  User Question  │────▶│         Retrieval Pipeline          │\n│  (+ History)    │     │  Child Search → Parent Recall       │\n└─────────────────┘     │  → Context Compress → LLM Prompt  │\n         ▲              └─────────────────────────────────────┘\n         │                           │\n┌─────────────────┐                  ▼\n│  LLM Response   │◄────    OpenAI / Compatible API\n│  (+ Sources)    │\n└─────────────────┘\n\n 技术栈\n\n- **前端**: [Streamlit](https://streamlit.io/) —— 快速构建数据应用界面\n- **LLM 框架**: [LangChain](https://python.langchain.com/) —— 编排检索与生成流程\n- **向量数据库**: [Chroma](https://www.trychroma.com/) —— 轻量级本地向量存储\n- **关系数据库**: [MySQL 8.0](https://www.mysql.com/) —— 文档元数据与聊天记录持久化\n- **ORM**: [SQLAlchemy 2.0](https://www.sqlalchemy.org/) —— 数据库操作\n- **容器化**: [Docker](https://www.docker.com/) + Docker Compose\n- **反向代理**: [Nginx](https://nginx.org/) —— 负载均衡、HTTPS、静态资源\n\n---\n\n 🚀 快速开始\n\n 环境要求\n\n- Python ≥ 3.10\n- Docker & Docker Compose（可选，推荐）\n- OpenAI API Key 或兼容的 LLM 服务\n\n 1. 克隆项目\n\n\ngit clone https://github.com/your-username/rag-document-assistant.git\ncd rag-document-assistant\n\n 2. 配置环境变量\n\n\ncp .env.example .env\n\n编辑 `.env` 文件：\n\n\n# MySQL\nMYSQL_HOST=localhost\nMYSQL_PORT=3306\nMYSQL_USER=rag_user\nMYSQL_PASSWORD=your_password\nMYSQL_DATABASE=rag_assistant\n\n# Chroma\nCHROMA_PERSIST_DIR=./data/chroma\n\n# LLM API\nOPENAI_API_KEY=sk-your-api-key\nOPENAI_BASE_URL=https://api.openai.com/v1\nLLM_MODEL=gpt-3.5-turbo\n\n# Retrieval\nCHUNK_SIZE=512\nCHUNK_OVERLAP=50\nTOP_K=5\n\n 3. 启动基础设施（Docker）\n\n\ndocker-compose up -d\n\n将启动：\n- MySQL 8.0（端口 3306）\n- Chroma Server（端口 8000）\n\n 4. 安装 Python 依赖\n\n\n# 创建虚拟环境（推荐）\nconda create -n rag_axing python=3.11 -y\nconda activate rag_axing\n\n# 安装项目依赖\npip install -e \".[dev]\"\n\n 5. 初始化数据库\n\n\npython -c \"from src.db.mysql_store import init_db; init_db()\"\n\n 6. 启动应用\n\n\nstreamlit run src/ui/app.py\n\n访问 http://localhost:8501 开始使用！\n\n---\n\n 📁 项目结构",
-  "mimetype": "text/plain",
-  "start_char_idx": 0,
-  "end_char_idx": 2332,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-{
-  "id_": "569a3c33-1432-49ea-9832-6357f9fe2038",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md"
+  name=
+  '萧家百年内第一斗者'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "4ddd0d41-8c33-4a0d-b30a-fb95ad377fa2",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "ea0d317a3a531659a5e5882de292b3737f7cea5baff474d3e65923e8df9468d0",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "2eb9db8f-c620-463b-a101-9115893e4736",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "a17ba0d79159212c6564ef1dd13837d6ca6c4248f39baaa2b0da79f8a241a2a3",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Wears',
+  source_id=
+  '萧炎',
+  target_id=
+  'Ancient black ring',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "docker-compose up -d\n\n将启动：\n- MySQL 8.0（端口 3306）\n- Chroma Server（端口 8000）\n\n 4. 安装 Python 依赖\n\n\n# 创建虚拟环境（推荐）\nconda create -n rag_axing python=3.11 -y\nconda activate rag_axing\n\n# 安装项目依赖\npip install -e \".[dev]\"\n\n 5. 初始化数据库\n\n\npython -c \"from src.db.mysql_store import init_db; init_db()\"\n\n 6. 启动应用\n\n\nstreamlit run src/ui/app.py\n\n访问 http://localhost:8501 开始使用！\n\n---\n\n 📁 项目结构\n\n\nrag-document-assistant/\n├── .env                      # 环境变量（本地配置，不提交）\n├── .env.example              # 环境变量模板\n├── docker-compose.yml        # Docker 编排配置\n├── docker-compose.prod.yml   # 生产环境编排配置\n├── Dockerfile                # 应用容器镜像\n├── nginx/\n│   ├── nginx.conf            # Nginx 配置文件\n│   └── ssl/                  # SSL 证书目录\n├── README.md                 # 项目说明\n│\n├── data/\n│   ├── chroma/               # Chroma 向量数据持久化目录\n│   └── .gitkeep\n│\n├── docs/\n│   ├── architecture.md       # 架构设计文档\n│   └── api_reference.md      # API 接口文档\n│\n├── src/\n│   ├── main.py               # 应用入口\n│   │\n│   ├── config/\n│   │   ├── settings.py       # Pydantic 配置管理\n│   │   ├── prompts.py        # LLM 提示词模板\n│   │   └── __init__.py\n│   │\n│   ├── core/                 # 核心业务逻辑\n│   │   ├── document_loader.py    # 多格式文档加载器\n│   │   ├── chunker.py            # 父子文档分块器 ⭐\n│   │   ├── compressor.py       # 上下文压缩器 ⭐\n│   │   ├── retriever.py        # 父子索引检索器 ⭐\n│   │   ├── rag_chain.py        # RAG 完整链路\n│   │   └── __init__.py\n│   │\n│   ├── db/                   # 数据持久化层\n│   │   ├── models.py           # SQLAlchemy 数据模型\n│   │   ├── mysql_store.py      # MySQL 连接与会话管理\n│   │   ├── chroma_store.py     # Chroma 向量存储封装\n│   │   ├── chat_history.py     # 聊天记录 CRUD\n│   │   └── __init__.py\n│   │\n│   ├── ui/\n│   │   └── app.py              # Streamlit 前端界面\n│   │\n│   └── utils/\n│       ├── helpers.py          # 通用工具函数\n│       └── __init__.py\n│\n└── tests/                    # 测试套件\n    ├── test_document_loader.py\n    ├── test_compressor.py\n    ├── test_retriever.py\n    └── __init__.py\n\n---\n\n 🔧 核心模块说明\n\n 父子文档分块（`core/chunker.py`）\n\n\n# 父块：大粒度（2000字符），保留完整语义\n# 子块：小粒度（512字符），用于向量精确匹配\n# 检索时：子块命中 → 返回父块完整内容\n\nchunker = ParentChildChunker(\n    parent_chunk_size=2000,\n    child_chunk_size=512\n)\nparent_child_pairs = chunker.split(documents)\n\n 上下文压缩（`core/compressor.py`）",
-  "mimetype": "text/plain",
-  "start_char_idx": 1965,
-  "end_char_idx": 4177,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-{
-  "id_": "2eb9db8f-c620-463b-a101-9115893e4736",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md"
+  name=
+  'Ancient black ring'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "569a3c33-1432-49ea-9832-6357f9fe2038",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "425de87595e4f6a57b82721ca2ac8c812e2c981ec3559c279f2045c40ba51c48",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "a3137b7c-036d-4d29-a10d-6f023a9340ca",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "26bd2ff921c91c9471d643c01e9154b8259a0a0885dfe7ee7c42e55eac431850",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is',
+  source_id=
+  '萧炎',
+  target_id=
+  'Isolated',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '0af034e1-54ef-40f0-9ca6-b9968ab22e69'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '0af034e1-54ef-40f0-9ca6-b9968ab22e69'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "# 父块：大粒度（2000字符），保留完整语义\n# 子块：小粒度（512字符），用于向量精确匹配\n# 检索时：子块命中 → 返回父块完整内容\n\nchunker = ParentChildChunker(\n    parent_chunk_size=2000,\n    child_chunk_size=512\n)\nparent_child_pairs = chunker.split(documents)\n\n 上下文压缩（`core/compressor.py`）\n\n\n# 从检索到的父文档中提取与问题相关的关键片段\n# 减少 Token 消耗，降低幻觉风险\n\ncompressor = ContextCompressor()\ncompressed_docs = compressor.compress(query, parent_documents)\n\n 父子索引检索（`core/retriever.py`）\n\n\n# 1. 子文档向量相似度检索（高精度）\n# 2. 关联提取父文档内容（完整性）\n# 3. 去重 + 压缩 → 送入 LLM\n\nretriever = ParentDocumentRetriever(\n    vector_store=chroma_store,\n    compressor=compressor\n)\ncontext = retriever.retrieve_as_context(query)\n\n---\n\n 🧪 测试\n\n\n# 运行全部测试\npytest tests/ -v\n\n# 运行指定模块\npytest tests/test_retriever.py -v\n\n# 生成覆盖率报告\npytest --cov=src --cov-report=html\n\n---\n\n 🖥️ 服务器部署指南\n\n 方案一：Docker Compose 全栈部署（推荐）\n\n适用于：快速上线、单机部署、中小规模使用\n\n 1. 服务器准备\n\n\n# 系统要求\n# - Ubuntu 20.04+ / CentOS 7+\n# - Docker 20.10+\n# - Docker Compose 2.0+\n# - 域名已解析到服务器（如需 HTTPS）\n\n# 安装 Docker（如未安装）\ncurl -fsSL https://get.docker.com | sh\nsudo usermod -aG docker $USER\n\n# 安装 Docker Compose\nsudo curl -L \"https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)\" -o /usr/local/bin/docker-compose\nsudo chmod +x /usr/local/bin/docker-compose\n\n 2. 项目部署\n\n\n# 克隆项目\ngit clone https://github.com/your-username/rag-document-assistant.git\ncd rag-document-assistant\n\n# 配置生产环境变量\ncp .env.example .env\nnano .env  # 编辑配置\n\n# 启动生产环境（包含 Nginx、SSL）\ndocker-compose -f docker-compose.prod.yml up -d\n\n# 查看服务状态\ndocker-compose -f docker-compose.prod.yml ps\n\n# 查看日志\ndocker-compose -f docker-compose.prod.yml logs -f app\n\n 3. 生产环境配置说明\n\n`.env` 生产环境关键配置：\n\n\n# === 数据库 ===\nMYSQL_HOST=mysql\nMYSQL_PORT=3306\nMYSQL_USER=rag_user\nMYSQL_PASSWORD=your_strong_password_here\nMYSQL_DATABASE=rag_assistant\n\n# === Chroma ===\nCHROMA_PERSIST_DIR=/app/data/chroma\n\n# === LLM API ===\nOPENAI_API_KEY=sk-your-production-api-key\nOPENAI_BASE_URL=https://api.openai.com/v1\nLLM_MODEL=gpt-3.5-turbo\n\n# === 应用配置 ===\nSTREAMLIT_SERVER_PORT=8501\nSTREAMLIT_SERVER_ADDRESS=0.0.0.0\nSTREAMLIT_SERVER_HEADLESS=true\nSTREAMLIT_SERVER_ENABLE_CORS=false\n\n# === 安全 ===\n# 如需访问控制，配置 Streamlit 认证\nSTREAMLIT_SERVER_COOKIE_SECRET=your-random-secret-key\n\n 方案二：手动部署（自定义程度高）\n\n适用于：已有数据库、需要集成现有基础设施\n\n 1. 环境准备",
-  "mimetype": "text/plain",
-  "start_char_idx": 3945,
-  "end_char_idx": 6168,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-{
-  "id_": "a3137b7c-036d-4d29-a10d-6f023a9340ca",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md"
+  name=
+  'Isolated'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "2eb9db8f-c620-463b-a101-9115893e4736",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "a17ba0d79159212c6564ef1dd13837d6ca6c4248f39baaa2b0da79f8a241a2a3",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "7fc6142e-f6c8-4189-9602-fe5b4eb713b8",
-      "node_type": "3",
-      "metadata": {
-        "col_schema": "",
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5fca312e42e410823e99449efeb0396ba13b31b0931314209eec1359451731fb",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has relationship with',
+  source_id=
+  '萧炎',
+  target_id=
+  '萧薰儿',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "# 创建应用目录\nsudo mkdir -p /opt/rag-assistant\ncd /opt/rag-assistant\n\n# 克隆代码\nsudo git clone https://github.com/your-username/rag-document-assistant.git .\n\n# 创建虚拟环境\npython3 -m venv venv\nsource venv/bin/activate\n\n# 安装依赖\npip install -e \".[dev]\"\n\n 2. 配置 Systemd 服务\n\n创建 `/etc/systemd/system/rag-assistant.service`：\n\n\n[Unit]\nDescription=RAG Document Assistant\nAfter=network.target mysql.service\n\n[Service]\nType=simple\nUser=raguser\nGroup=raguser\nWorkingDirectory=/opt/rag-assistant\nEnvironment=PATH=/opt/rag-assistant/venv/bin\nEnvironmentFile=/opt/rag-assistant/.env\nExecStart=/opt/rag-assistant/venv/bin/streamlit run src/ui/app.py\nRestart=always\nRestartSec=10\n\n[Install]\nWantedBy=multi-user.target\n\n启动服务：\n\n\nsudo systemctl daemon-reload\nsudo systemctl enable rag-assistant\nsudo systemctl start rag-assistant\nsudo systemctl status rag-assistant\n\n 3. 配置 Nginx 反向代理\n\n创建 `/etc/nginx/sites-available/rag-assistant`：\n\n\nupstream rag_assistant {\n    server 127.0.0.1:8501;\n}\n\nserver {\n    listen 80;\n    server_name your-domain.com;\n\n    # 强制跳转 HTTPS\n    return 301 https://$server_name$request_uri;\n}\n\nserver {\n    listen 443 ssl http2;\n    server_name your-domain.com;\n\n    # SSL 证书（使用 Let's Encrypt 或自签名）\n    ssl_certificate /path/to/fullchain.pem;\n    ssl_certificate_key /path/to/privkey.pem;\n    ssl_protocols TLSv1.2 TLSv1.3;\n\n    # 文件上传大小限制\n    client_max_body_size 100M;\n\n    location / {\n        proxy_pass http://rag_assistant;\n        proxy_http_version 1.1;\n\n        proxy_set_header Upgrade $http_upgrade;\n        proxy_set_header Connection \"upgrade\";\n        proxy_set_header Host $host;\n        proxy_set_header X-Real-IP $remote_addr;\n        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;\n        proxy_set_header X-Forwarded-Proto $scheme;\n\n        # 超时设置（大文件上传/长文本生成）\n        proxy_read_timeout 300s;\n        proxy_connect_timeout 75s;\n    }\n\n    # 静态资源缓存\n    location /static {\n        alias /opt/rag-assistant/static;\n        expires 30d;\n    }\n}\n\n启用配置：\n\n\nsudo ln -s /etc/nginx/sites-available/rag-assistant /etc/nginx/sites-enabled/\nsudo nginx -t\nsudo systemctl restart nginx\n\n 4. 配置 SSL（Let's Encrypt）\n\n\nsudo apt install certbot python3-certbot-nginx\nsudo certbot --nginx -d your-domain.com\n\n# 自动续期测试\nsudo certbot renew --dry-run\n\n 方案三：云服务器部署（阿里云/腾讯云/AWS）\n\n 阿里云 ECS 部署示例\n\n\n# 1. 购买 ECS 实例（建议配置）\n# - 2核 4G 起步（生产建议 4核 8G）\n# - Ubuntu 22.04 LTS\n# - 带宽 5Mbps+\n# - 系统盘 40GB + 数据盘 100GB（存储向量数据）\n\n# 2. 安全组配置\n# - 入方向：80, 443, 22 端口开放\n# - 出方向：全部开放（访问 LLM API）\n\n# 3. 数据盘挂载（如有）\nsudo mkfs -t ext4 /dev/vdb\nsudo mkdir /data\nsudo mount /dev/vdb /data\n\n# 4. 部署应用（使用 Docker Compose 方案）\ncd /data\ngit clone https://github.com/your-username/rag-document-assistant.git\ncd rag-document-assistant\ndocker-compose -f docker-compose.prod.yml up -d\n\n---\n\n 🔒 生产环境安全建议",
-  "mimetype": "text/plain",
-  "start_char_idx": 6171,
-  "end_char_idx": 8929,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-{
-  "id_": "7fc6142e-f6c8-4189-9602-fe5b4eb713b8",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md",
-    "col_schema": ""
+  name=
+  '萧薰儿'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "a3137b7c-036d-4d29-a10d-6f023a9340ca",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "26bd2ff921c91c9471d643c01e9154b8259a0a0885dfe7ee7c42e55eac431850",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "e4142076-5517-4535-ba17-19e7ffbc6c44",
-      "node_type": "1",
-      "metadata": {
-        "table_df": "{' 措施 ': {0: ' **HTTPS 强制** ', 1: ' **访问控制** ', 2: ' **API Key 保护** ', 3: ' **数据库安全** ', 4: ' **防火墙** ', 5: ' **日志监控** '}, ' 说明 ': {0: \" Nginx 配置 80 跳转 443，使用 Let's Encrypt 免费证书 \", 1: ' 配置 Streamlit 认证或 Nginx Basic Auth ', 2: ' `.env` 文件权限 600，不提交到 Git ', 3: ' MySQL 仅监听本地/内网，强密码，定期备份 ', 4: ' 仅开放 80/443，关闭 8501 直接访问 ', 5: ' 配置日志轮转，集成阿里云 SLS 或 ELK '}}",
-        "table_summary": "HTTPS 强制（80→443，Let's Encrypt）、访问控制（Streamlit 认证 / Nginx Basic Auth）、API Key 保护（.env 权限 600）、数据库安全（MySQL 本地/内网监听、强密码、定期备份）、防火墙（仅开放 80/443，禁用 8501 直接访问）、日志监控（日志轮转、阿里云 SLS / ELK）。,\nwith the following columns:\n",
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "031c41d655d1a21bfd1511bf29e00c7eb7e5106a7e4928183818dcd729fa84e3",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has future role',
+  source_id=
+  '萧炎',
+  target_id=
+  'Low-ranking family member',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '0af034e1-54ef-40f0-9ca6-b9968ab22e69'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '0af034e1-54ef-40f0-9ca6-b9968ab22e69'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "HTTPS 强制（80→443，Let's Encrypt）、访问控制（Streamlit 认证 / Nginx Basic Auth）、API Key 保护（.env 权限 600）、数据库安全（MySQL 本地/内网监听、强密码、定期备份）、防火墙（仅开放 80/443，禁用 8501 直接访问）、日志监控（日志轮转、阿里云 SLS / ELK）。,\nwith the following columns:\n",
-  "mimetype": "text/plain",
-  "start_char_idx": 9734,
-  "end_char_idx": 10032,
-  "text_template": "{metadata_str}\n\n{content}",
-  "index_id": "e4142076-5517-4535-ba17-19e7ffbc6c44",
-  "obj": null,
-  "class_name": "IndexNode"
-}
-{
-  "id_": "e4142076-5517-4535-ba17-19e7ffbc6c44",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md",
-    "table_df": "{' 措施 ': {0: ' **HTTPS 强制** ', 1: ' **访问控制** ', 2: ' **API Key 保护** ', 3: ' **数据库安全** ', 4: ' **防火墙** ', 5: ' **日志监控** '}, ' 说明 ': {0: \" Nginx 配置 80 跳转 443，使用 Let's Encrypt 免费证书 \", 1: ' 配置 Streamlit 认证或 Nginx Basic Auth ', 2: ' `.env` 文件权限 600，不提交到 Git ', 3: ' MySQL 仅监听本地/内网，强密码，定期备份 ', 4: ' 仅开放 80/443，关闭 8501 直接访问 ', 5: ' 配置日志轮转，集成阿里云 SLS 或 ELK '}}",
-    "table_summary": "HTTPS 强制（80→443，Let's Encrypt）、访问控制（Streamlit 认证 / Nginx Basic Auth）、API Key 保护（.env 权限 600）、数据库安全（MySQL 本地/内网监听、强密码、定期备份）、防火墙（仅开放 80/443，禁用 8501 直接访问）、日志监控（日志轮转、阿里云 SLS / ELK）。,\nwith the following columns:\n"
+  name=
+  'Low-ranking family member'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "7fc6142e-f6c8-4189-9602-fe5b4eb713b8",
-      "node_type": "3",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md",
-        "col_schema": ""
-      },
-      "hash": "6135fb8817b6f141afbb4ff4db76a113994b32d6fd7f7d5848c7d80ed32333e2",
-      "class_name": "RelatedNodeInfo"
-    },
-    "3": {
-      "node_id": "45ee7660-d59f-470d-be9a-d9eb08a746da",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "b59e811fa95167112d00a75ae73aa147e4336b5c832059c675e178b1e66d2470",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has',
+  source_id=
+  '萧炎',
+  target_id=
+  'Elder brothers',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "HTTPS 强制（80→443，Let's Encrypt）、访问控制（Streamlit 认证 / Nginx Basic Auth）、API Key 保护（.env 权限 600）、数据库安全（MySQL 本地/内网监听、强密码、定期备份）、防火墙（仅开放 80/443，禁用 8501 直接访问）、日志监控（日志轮转、阿里云 SLS / ELK）。,\nwith the following columns:\n\n| 措施 | 说明 |\n|---|---|\n| **HTTPS 强制** | Nginx 配置 80 跳转 443，使用 Let's Encrypt 免费证书 |\n| **访问控制** | 配置 Streamlit 认证或 Nginx Basic Auth |\n| **API Key 保护** | `.env` 文件权限 600，不提交到 Git |\n| **数据库安全** | MySQL 仅监听本地/内网，强密码，定期备份 |\n| **防火墙** | 仅开放 80/443，关闭 8501 直接访问 |\n| **日志监控** | 配置日志轮转，集成阿里云 SLS 或 ELK |\n",
-  "mimetype": "text/plain",
-  "start_char_idx": 9734,
-  "end_char_idx": 10032,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-{
-  "id_": "45ee7660-d59f-470d-be9a-d9eb08a746da",
-  "embedding": null,
-  "metadata": {
-    "filename": "test.md",
-    "extension": ".md"
+  name=
+  'Elder brothers'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
   },
-  "excluded_embed_metadata_keys": [],
-  "excluded_llm_metadata_keys": [],
-  "relationships": {
-    "1": {
-      "node_id": "b21c2351-c775-4e7c-bac8-04e428841b29",
-      "node_type": "4",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md"
-      },
-      "hash": "5f3659f2c604ec3febddc1eb4225c577e4fd70993dafc641f56dbd493d1b581f",
-      "class_name": "RelatedNodeInfo"
-    },
-    "2": {
-      "node_id": "e4142076-5517-4535-ba17-19e7ffbc6c44",
-      "node_type": "1",
-      "metadata": {
-        "filename": "test.md",
-        "extension": ".md",
-        "table_df": "{' 措施 ': {0: ' **HTTPS 强制** ', 1: ' **访问控制** ', 2: ' **API Key 保护** ', 3: ' **数据库安全** ', 4: ' **防火墙** ', 5: ' **日志监控** '}, ' 说明 ': {0: \" Nginx 配置 80 跳转 443，使用 Let's Encrypt 免费证书 \", 1: ' 配置 Streamlit 认证或 Nginx Basic Auth ', 2: ' `.env` 文件权限 600，不提交到 Git ', 3: ' MySQL 仅监听本地/内网，强密码，定期备份 ', 4: ' 仅开放 80/443，关闭 8501 直接访问 ', 5: ' 配置日志轮转，集成阿里云 SLS 或 ELK '}}",
-        "table_summary": "HTTPS 强制（80→443，Let's Encrypt）、访问控制（Streamlit 认证 / Nginx Basic Auth）、API Key 保护（.env 权限 600）、数据库安全（MySQL 本地/内网监听、强密码、定期备份）、防火墙（仅开放 80/443，禁用 8501 直接访问）、日志监控（日志轮转、阿里云 SLS / ELK）。,\nwith the following columns:\n"
-      },
-      "hash": "e643baf6e3c2c6297a370a2df1e7a80d1811d2f42a7c00692badae9a62a5e8f2",
-      "class_name": "RelatedNodeInfo"
-    }
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has',
+  source_id=
+  '萧炎',
+  target_id=
+  'Ancient ring',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
   },
-  "metadata_template": "{key}: {value}",
-  "metadata_separator": "\n",
-  "text": "---\n\n 🐳 Docker 部署\n\n 开发环境\n\n\n# 启动所有服务（MySQL + Chroma + App）\ndocker-compose up -d\n\n# 查看日志\ndocker-compose logs -f app\n\n# 停止服务\ndocker-compose down\n\n 生产环境\n\n\n# 使用生产配置（含 Nginx、SSL）\ndocker-compose -f docker-compose.prod.yml up -d\n\n# 更新部署\ndocker-compose -f docker-compose.prod.yml pull\ndocker-compose -f docker-compose.prod.yml up -d --build\n\n# 查看资源使用\ndocker stats\n\n---\n\n 📌 开发路线图\n\n- [x] Phase 1: 基础设施搭建（配置管理、Docker 环境）\n- [x] Phase 2: 数据库层（MySQL 模型、聊天记录、Chroma 封装）\n- [x] Phase 3: 文档处理核心（加载器、父子分块、向量化）\n- [x] Phase 4: 检索与 RAG 链路（父子索引、压缩器、Chain 组装）\n- [x] Phase 5: Streamlit 前端（上传、对话、历史展示）\n- [x] Phase 6: 生产部署（Docker Compose、Nginx、SSL、Systemd）\n- [ ] Phase 7: 高级功能（多知识库、权限管理、文档解析优化）\n- [ ] Phase 8: 性能优化（并发检索、缓存策略、Embedding 模型替换）\n\n---\n\n 🤝 贡献指南\n\n1. Fork 本仓库\n2. 创建特性分支：`git checkout -b feature/amazing-feature`\n3. 提交更改：`git commit -m 'Add amazing feature'`\n4. 推送分支：`git push origin feature/amazing-feature`\n5. 创建 Pull Request\n\n---\n\n 📄 许可证\n\n[MIT License](LICENSE)\n\n---\n\n 🙏 致谢\n\n- [LangChain](https://github.com/langchain-ai/langchain) —— LLM 应用开发框架\n- [Chroma](https://github.com/chroma-core/chroma) —— 开源向量数据库\n- [Streamlit](https://github.com/streamlit/streamlit) —— 数据应用前端框架\n\n---\n\n> 💡 **提示**: 首次使用请确保 `.env` 文件已正确配置，并执行数据库初始化命令。生产部署前请务必修改默认密码和 API Key。",
-  "mimetype": "text/plain",
-  "start_char_idx": 0,
-  "end_char_idx": 1232,
-  "text_template": "{metadata_str}\n\n{content}",
-  "class_name": "TextNode"
-}
-
-
+  name=
+  'Ancient ring'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is fiancé of',
+  source_id=
+  '萧炎',
+  target_id=
+  '纳兰嫣然',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'b2b6dc5b-a42b-4059-870d-381b4a5e2c75'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '纳兰嫣然'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is called',
+  source_id=
+  '萧炎',
+  target_id=
+  '天才',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  },
+  name=
+  '天才'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Feels',
+  source_id=
+  '萧炎',
+  target_id=
+  'Bitterness',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  },
+  name=
+  'Bitterness'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Needs to reach',
+  source_id=
+  '萧炎',
+  target_id=
+  'Seven segments of 斗之气',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  },
+  name=
+  'Seven segments of 斗之气'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Was seated beside',
+  source_id=
+  '萧炎',
+  target_id=
+  '萧熏儿',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '13ecf022-492f-4339-9630-273bac01a157'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '13ecf022-492f-4339-9630-273bac01a157'
+  },
+  name=
+  '萧熏儿'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Undergoes',
+  source_id=
+  '萧炎',
+  target_id=
+  'Testing',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  },
+  name=
+  'Testing'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has status',
+  source_id=
+  '萧炎',
+  target_id=
+  'Fallen',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '0af034e1-54ef-40f0-9ca6-b9968ab22e69'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '0af034e1-54ef-40f0-9ca6-b9968ab22e69'
+  },
+  name=
+  'Fallen'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  },
+  name=
+  '萧薰儿'
+  ),
+  Relation(label=
+  'Remains loyal to',
+  source_id=
+  '萧薰儿',
+  target_id=
+  '萧炎',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has fiancée',
+  source_id=
+  '萧炎',
+  target_id=
+  '纳兰嫣然',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'ed85fe0b-984a-472b-a2a5-a2555f7ab8d2'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '纳兰嫣然'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has',
+  source_id=
+  '萧炎',
+  target_id=
+  'Three segments of dou qi',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  },
+  name=
+  'Three segments of dou qi'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is from',
+  source_id=
+  '萧炎',
+  target_id=
+  'Wutan city',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  },
+  name=
+  'Wutan city'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is mocked by',
+  source_id=
+  '萧炎',
+  target_id=
+  'Clansmen',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  },
+  name=
+  'Clansmen'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Experienced',
+  source_id=
+  '萧炎',
+  target_id=
+  'Downfall',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  },
+  name=
+  'Downfall'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Received ring from',
+  source_id=
+  '萧炎',
+  target_id=
+  'Mother',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  },
+  name=
+  'Mother'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is betrothed to',
+  source_id=
+  '萧炎',
+  target_id=
+  '纳兰嫣然',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'ed85fe0b-984a-472b-a2a5-a2555f7ab8d2'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '纳兰嫣然'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧战'
+  ),
+  Relation(label=
+  'Is father of',
+  source_id=
+  '萧战',
+  target_id=
+  '萧炎',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '54eeaad7-fa21-4dd1-bd21-740fefaed113'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Resides in',
+  source_id=
+  '萧炎',
+  target_id=
+  '斗气大陆',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  },
+  name=
+  '斗气大陆'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Wears',
+  source_id=
+  '萧炎',
+  target_id=
+  'Black ring',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  },
+  name=
+  'Black ring'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is',
+  source_id=
+  '萧炎',
+  target_id=
+  '少年',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  },
+  name=
+  '少年'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Withdraws to',
+  source_id=
+  '萧炎',
+  target_id=
+  'Last row',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  },
+  name=
+  'Last row'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is',
+  source_id=
+  '萧炎',
+  target_id=
+  'Third young master',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  },
+  name=
+  'Third young master'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Was formerly known as',
+  source_id=
+  '萧炎',
+  target_id=
+  'Talented youth',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  },
+  name=
+  'Talented youth'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Lives in',
+  source_id=
+  '萧炎',
+  target_id=
+  'Clan',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  },
+  name=
+  'Clan'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is',
+  source_id=
+  '萧炎',
+  target_id=
+  'Character',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '0af034e1-54ef-40f0-9ca6-b9968ab22e69'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '13ecf022-492f-4339-9630-273bac01a157'
+  },
+  name=
+  'Character'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has relationship with',
+  source_id=
+  '萧炎',
+  target_id=
+  '萧熏儿',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '13ecf022-492f-4339-9630-273bac01a157'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '13ecf022-492f-4339-9630-273bac01a157'
+  },
+  name=
+  '萧熏儿'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '纳兰嫣然'
+  ),
+  Relation(label=
+  'Is betrothed to',
+  source_id=
+  '纳兰嫣然',
+  target_id=
+  '萧炎',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has',
+  source_id=
+  '萧炎',
+  target_id=
+  '婚约 with 纳兰嫣然',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '婚约 with 纳兰嫣然'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has',
+  source_id=
+  '萧炎',
+  target_id=
+  'Soul perception',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  },
+  name=
+  'Soul perception'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is son of',
+  source_id=
+  '萧炎',
+  target_id=
+  'Clan chief',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  },
+  name=
+  'Clan chief'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has',
+  source_id=
+  '萧炎',
+  target_id=
+  'Past life memory',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  },
+  name=
+  'Past life memory'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  },
+  name=
+  '族长'
+  ),
+  Relation(label=
+  'Summons',
+  source_id=
+  '族长',
+  target_id=
+  '萧炎',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'c6e5c3a5-67b0-414e-8a13-ee4575235b93'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has',
+  source_id=
+  '萧炎',
+  target_id=
+  '斗之气 level',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  },
+  name=
+  '斗之气 level'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Feels',
+  source_id=
+  '萧炎',
+  target_id=
+  '愤怒',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '54eeaad7-fa21-4dd1-bd21-740fefaed113'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '54eeaad7-fa21-4dd1-bd21-740fefaed113'
+  },
+  name=
+  '愤怒'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Speaks about',
+  source_id=
+  '萧炎',
+  target_id=
+  'Letting go and picking up',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  },
+  name=
+  'Letting go and picking up'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has expression',
+  source_id=
+  '萧炎',
+  target_id=
+  '阴沉',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '54eeaad7-fa21-4dd1-bd21-740fefaed113'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '54eeaad7-fa21-4dd1-bd21-740fefaed113'
+  },
+  name=
+  '阴沉'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Reflects on',
+  source_id=
+  '萧炎',
+  target_id=
+  'Fifteen years',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '9883c488-12f4-43b3-bd34-c07ffc9766ed'
+  },
+  name=
+  'Fifteen years'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '13ecf022-492f-4339-9630-273bac01a157'
+  },
+  name=
+  '萧熏儿'
+  ),
+  Relation(label=
+  'Helps',
+  source_id=
+  '萧熏儿',
+  target_id=
+  '萧炎',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '13ecf022-492f-4339-9630-273bac01a157'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is son of',
+  source_id=
+  '萧炎',
+  target_id=
+  'Xiao zhan',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '1cd29caf-aacf-4c7a-bbe9-05c50bbbd9ba'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'd67784c3-f38a-4d82-8adb-bfbf00265daa'
+  },
+  name=
+  'Xiao zhan'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Is',
+  source_id=
+  '萧炎',
+  target_id=
+  'Fifteen years old',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'a660d798-93db-4f35-ac67-c25821e3e107'
+  },
+  name=
+  'Fifteen years old'
+  )),
+  (EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': '6ecaffcf-cf00-4ac3-9b39-067c059f0644'
+  },
+  name=
+  '萧炎'
+  ),
+  Relation(label=
+  'Has cultivation level',
+  source_id=
+  '萧炎',
+  target_id=
+  'Three segments',
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  }
+  ),
+  EntityNode(label=
+  'entity',
+  embedding=None,
+  properties=
+  {
+    'file_path': 'data\\小说.txt',
+    'file_name': '小说.txt',
+    'file_type': 'text/plain',
+    'file_size': 49713,
+    'creation_date': '2026-05-07',
+    'last_modified_date': '2025-04-30',
+    'triplet_source_id': 'fbca0db8-b24a-4b16-8f4e-058ff3f12585'
+  },
+  name=
+  'Three segments'
+  ))
+]

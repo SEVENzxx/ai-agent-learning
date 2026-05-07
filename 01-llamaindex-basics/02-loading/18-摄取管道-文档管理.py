@@ -15,7 +15,6 @@ DATA_DIR = "data1"
 # 自动创建文件夹，防止报错
 os.makedirs(DATA_DIR, exist_ok=True)
 
-# --- 修复后的函数 ---
 def run_incremental_ingestion(data_path, storage_path):
     # 永远先创建一个新的空 docstore
     docstore = SimpleDocumentStore()

@@ -14,7 +14,7 @@ def get_llm():
     获取配置好的 LLM 和嵌入模型
     用法: llm, embed_model = get_llm()
     """
-    llm = DashScope(
+    Settings.llm = DashScope(
         model_name=os.getenv("LLM_MODEL"),
         api_key=os.getenv("DASHSCOPE_API_KEY"),
         api_base_url=os.getenv("DASHSCOPE_BASE_URL"),
@@ -22,11 +22,11 @@ def get_llm():
         is_chat_model=True
     )
 
-    embed_model = HuggingFaceEmbedding(
+    Settings.embed_model = HuggingFaceEmbedding(
         model_name=os.getenv("EMBEDDING_MODEL_PATH", "")
     )
 
-    return llm, embed_model
+    return Settings.llm, Settings.embed_model
 
 
 def init_settings():
